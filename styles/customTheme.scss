@@ -1,0 +1,12 @@
+$enable-shadows: true;
+
+// colors
+$primary: #4756EF;
+$secondary: #262626;
+$body-color:  #333;
+$body-bg: #f2f2f2;
+
+// border
+$border-radius-lg: .9rem;
+
+@import '../scss/bootstrap.scss';
