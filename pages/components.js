@@ -2,11 +2,14 @@ import { useRouter } from 'next/router'
 import { Button, Row, Col } from 'reactstrap';
 import Layout from '../components/Layout'
 import CardPvlse from '../components/Card'
+import Footer from '../components/Footer'
+import NavBar from '../components/NavBar'
 
 export default function components() {
   const router = useRouter()
   return (
     <div>
+      <NavBar />
       <Layout pageTitle="Components">
         <p className="text-muted" onClick={() => router.push('/')}>Go back</p>
         <section className="pb-5">
@@ -58,6 +61,9 @@ export default function components() {
           </Row>
         </section>
       </Layout>
+      <section>
+          <Footer />
+        </section>
     </div>
   )
 }
