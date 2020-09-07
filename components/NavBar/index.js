@@ -15,6 +15,7 @@ import {
 } from 'reactstrap';
 import styles from'../../styles/navbar.module.scss'
 import SearchNavBar from '../SearchNavBar'
+import logo from '../../public/img/general/logo-white.svg'
 
 const NavBar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +25,7 @@ const NavBar = (props) => {
   return (
     <div>
       <Navbar color="secondary py-3" dark expand="md">
-        <NavbarBrand href="/">reactstrap</NavbarBrand>
+        <NavbarBrand href="/"><img src={logo}/></NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto ml-auto" navbar>

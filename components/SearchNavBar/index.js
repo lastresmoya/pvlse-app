@@ -6,7 +6,7 @@ export default function SearchNavBar() {
         <div className={`${styles.button_border} text-white d-flex py-1`}>
            <div className={`${styles.input_border} my-1`}>
                 <Input size="sm" className="bg-secondary border-0 text-center" placeholder="Activity" />
-            </div> 
+            </div>
            <div className={`${styles.input_border} my-1`}>
                 <Input size="sm" className="bg-secondary border-0 text-center" placeholder="Date" />
            </div>
