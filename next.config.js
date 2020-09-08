@@ -1,6 +1,4 @@
-const withPlugins = require('next-compose-plugins');
-const withImages = require('next-images')
-
-module.exports = withPlugins([
-  [withImages],
-  ])
+module.exports = {
+  // Target must be serverless
+  target: 'serverless'
+};
