@@ -10,6 +10,7 @@ export default function Home() {
           PVLSE Home page
         </p>
         <Link href="/components">Go to StyleGuide</Link>
+        <Link href="/profile">Go to Profile</Link>
       </div>
     </Layout>
   )
