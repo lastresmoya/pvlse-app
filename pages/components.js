@@ -4,6 +4,7 @@ import Layout from '../components/Layout'
 import CardPvlse from '../components/Card'
 import Footer from '../components/Footer'
 import NavBar from '../components/NavBar'
+import Forms from '../components/Forms'
 
 export default function components() {
   const router = useRouter()
@@ -59,6 +60,9 @@ export default function components() {
               />
             </Col>
           </Row>
+        </section>
+        <section>
+          <Forms />
         </section>
       </Layout>
       <section>

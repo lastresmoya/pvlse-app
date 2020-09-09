@@ -28,7 +28,11 @@ const NavBar = (props) => {
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto ml-auto" navbar>
-            <SearchNavBar />
+            <SearchNavBar
+              firstPlaceholder="Activity"
+              secondPlaceholder="Date"
+              thirdPlaceholder="Location"
+            />
           </Nav>
           <Nav navbar className="align-items-center">
             <NavItem>
