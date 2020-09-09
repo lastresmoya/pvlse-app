@@ -12,10 +12,10 @@ export default function MainCardProfile() {
             </Col>
             <Col md="5">
             <div className="d-flex flex-wrap h-100">
-              <div> 
+              <div>
                 <h3 className="font-weight-bold">Emma Fischer
                     <Badge className="ml-3 px-3" pill size="md" color="primary">
-                    <img src="./img/profile/profile-img.svg" width="30" alt="..." class="img-fluid mr-2" />
+                    <img src="./img/profile/profile-img.svg" width="30" alt="..." className="img-fluid mr-2" />
                     Follow
                     </Badge>
                 </h3>
@@ -34,7 +34,7 @@ export default function MainCardProfile() {
               </div>
                 <div className="d-flex">
                     <div>
-                        <img src="./img/profile/friends.svg" alt="..." class="img-fluid mr-4" />
+                        <img src="./img/profile/friends.svg" alt="..." className="img-fluid mr-4" />
                     </div>
                     <div>
                         <p><span className="font-weight-bold">Tom White, Siya Morris, Saira Shea</span> and 117 friends follows Emma Fischer.</p>
