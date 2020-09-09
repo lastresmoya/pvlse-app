@@ -1,0 +1,41 @@
+.form-group {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 15px;
+  
+    label {
+      transition: all 0.3s ease;
+      display: inline-block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .input-group {
+    
+        .input-group-prepend .input-group-text {
+        border-right: 0;
+        &:focus {
+            border: 1px solid red;
+        }
+        }
+        input, select {
+            border-left: 0;
+        }
+    }
+  
+    input, select, textarea {
+      transition: all 0.3s ease;
+      display: block;
+      padding: 8px 14px;
+      width: 100%;
+  
+      &:focus {
+        outline: none;
+        border-color: #4756EF;
+        
+        +label {
+          color: #4756EF;
+        }
+      }
+    }
+  }
