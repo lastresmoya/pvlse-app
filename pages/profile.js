@@ -4,26 +4,29 @@ import Layout from '../components/Layout'
 import CardPvlse from '../components/Card'
 import Footer from '../components/Footer'
 import NavBar from '../components/NavBar'
-import Forms from '../components/Forms'
 import MainCardProfile from '../components/MainCardProfile'
 import UpcomingActivites from '../components/UpcomingActivites'
 import AllActivities from '../components/AllActivities'
 import AboutProfile from '../components/AboutProfile'
 import Reviews from '../components/Reviews'
+import GalleryProfile from '../components/GalleryProfile'
+import ReactionsProfile from '../components/ReactionsProfile'
 
 export default function components() {
   const router = useRouter()
   return (
     <div>
       <NavBar />
-      <Layout pageTitle="Profile">
-          <Row>
-            <Col>
+      <Layout pageTitle="Profile" backgroundColor="#4756EF;">
+          <Row style={{marginBottom: "20%;"}}>
+            <Col style={{marginBottom: "-25%;"}}>
               <MainCardProfile />
             </Col>
           </Row>
+      </Layout>
+      <Layout>
           <Row>
-            <Col sm="8">
+            <Col sm="7">
               <UpcomingActivites />
               <AllActivities />
               <AboutProfile
@@ -32,8 +35,17 @@ export default function components() {
               userDescription="I discovered yoga while working at an advertising agency in New York City. Seven years into my job, I was burnt out, disillusioned by the corporate world, and looking for something more meaningful. There was a studio next to the office where I began taking classes. It started with two days a week, but within six months, I was a daily student. I started leaving work early to get to my favorite teacher’s classes, and very quickly, I realized my yoga was more important than my job."
               />
               <Reviews />
+              <GalleryProfile />
             </Col>
             <Col>
+              <ReactionsProfile
+                userName="Emma"
+                loveReactions="105"
+                likeReactions="38"
+                dislikeReactions="05"
+                angryReactions="01"
+                featureFan="Adriana Hale"
+              />
             </Col>
           </Row>
       </Layout>

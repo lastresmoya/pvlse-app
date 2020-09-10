@@ -16,7 +16,7 @@ export default function Review({
                 </Col>
                 <Col sm="7">
                 <h5>{reviewerName}</h5>
-                <p>Attended <a className="text-primary">{reviewerActivity}</a></p>
+                <small>Attended <a className="text-primary">{reviewerActivity}</a></small>
                 </Col>
                 <Col sm="2">
                   <img src={reviewerReaction} alt="..." className="d-block m-auto" />
