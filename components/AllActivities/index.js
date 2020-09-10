@@ -12,7 +12,7 @@ export default function AllActivites() {
                 </div>
             </div>
             <div className="d-flex my-4">
-                <div className="mx-4">
+                <div className="mr-2">
                   <CardPvlse
                     img="./img/profile/yoga-activity.png"
                     title="Yoga for beginners"
@@ -21,9 +21,12 @@ export default function AllActivites() {
                     price="25"
                     hostPic="https://via.placeholder.com/150"
                     hostName="Emma Fischer"
+                    modality="Online"
+                    date="22 July, 2020"
+                    hour="15:00 hr"
                   />
                 </div>
-                <div className="mx-4">
+                <div className="ml-2">
                   <CardPvlse
                     img="./img/profile/dance-activity.png"
                     title="Yoga for beginners"
@@ -32,11 +35,14 @@ export default function AllActivites() {
                     price="25"
                     hostPic="https://via.placeholder.com/150"
                     hostName="Emma Fischer"
+                    modality="Online"
+                    date="22 July, 2020"
+                    hour="15:00 hr"
                   />
                 </div>
             </div>
             <div className="d-flex my-4">
-                <div className="mx-4">
+                <div className="mr-2">
                   <CardPvlse
                     img="./img/profile/yoga-activity.png"
                     title="Yoga for beginners"
@@ -45,9 +51,12 @@ export default function AllActivites() {
                     price="25"
                     hostPic="https://via.placeholder.com/150"
                     hostName="Emma Fischer"
+                    modality="Online"
+                    date="22 July, 2020"
+                    hour="15:00 hr"
                   />
                 </div>
-                <div className="mx-4">
+                <div className="ml-2">
                   <CardPvlse
                     img="./img/profile/dance-activity.png"
                     title="Yoga for beginners"
@@ -56,6 +65,9 @@ export default function AllActivites() {
                     price="25"
                     hostPic="https://via.placeholder.com/150"
                     hostName="Emma Fischer"
+                    modality="Online"
+                    date="22 July, 2020"
+                    hour="15:00 hr"
                   />
                 </div>
             </div>

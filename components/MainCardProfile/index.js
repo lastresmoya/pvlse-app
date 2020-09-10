@@ -1,7 +1,7 @@
-import { Row, Col, Badge } from 'reactstrap'
+import { Row, Col, Badge, Button } from 'reactstrap'
 import ProfileImg from '../ProfileImg'
 import styles from'../../styles/profile.module.scss'
-import CardPvlse from '../Card'
+import CardNextActivity from '../Card/CardNextActivity'
 
 export default function MainCardProfile() {
     return (
@@ -9,6 +9,14 @@ export default function MainCardProfile() {
           <Row>
             <Col md="3">
               <ProfileImg />
+              <div className="d-flex justify-content-center mt-5">
+                <div className="mx-2">
+                <Button color="link" className={`${styles.button_icon}`}><img src="./img/profile/mail-icon.svg"/></Button>
+                </div>
+                <div className="mx-2">
+                <Button color="link" className={`${styles.button_icon}`}><img src="./img/profile/share-icon.svg"/></Button>
+                </div>
+              </div>
             </Col>
             <Col md="5">
             <div className="d-flex flex-wrap h-100">
@@ -43,14 +51,10 @@ export default function MainCardProfile() {
               </div>
             </Col>
             <Col md="4">
-              <CardPvlse
-                img="./img/profile/dance-activity.png"
-                title="Yoga for beginners"
-                category="Sports & Fitness"
-                categoryColor="#63C378"
-                price="25"
-                hostPic="https://via.placeholder.com/150"
-                hostName="Emma Fischer"
+              <CardNextActivity
+                modality="Online"
+                activity="Yoga for beginners"
+                timeLine="00:29:30 hs"
               />
             </Col>
            </Row>
