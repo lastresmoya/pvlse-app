@@ -51,55 +51,57 @@ export default function Review({
                     </div>
                 </div>
             </div>
-            <div>
-                <h5 className="font-weight-bold">Featured Fan</h5>
-            </div>
-            <div className={`${styles.feature_fan_border} d-flex mx-5 my-3 p-3`}>
-               <div className="ml-1 mr-3">
-               <img src="./img/profile/feature-fan-img.svg" alt="..." className="img-fluid" />
-               </div>
-               <div>
-                    <h6 className="font-weight-bold">{featureFan}</h6>
-                    <div className="d-flex">
-                        <div className="d-flex mr-3">
-                            <div>
-                                <img src="./img/profile/love-reaction.svg" width="25" />
-                            </div>
-                            <div className="ml-1">
-                            <p className="font-weight-bold text-primary mb-0">{loveReactions}</p>
-                            </div>
-                        </div>
+            <div className="d-none d-md-block">
+                <div>
+                    <h5 className="font-weight-bold">Featured Fan</h5>
+                </div>
+                <div className={`${styles.feature_fan_border} d-flex mx-5 my-3 p-3`}>
+                <div className="ml-1 mr-3">
+                <img src="./img/profile/feature-fan-img.svg" alt="..." className="img-fluid" />
+                </div>
+                <div>
+                        <h6 className="font-weight-bold">{featureFan}</h6>
                         <div className="d-flex">
-                            <div>
-                                <img src="./img/profile/like-reaction.svg" width="25" />
+                            <div className="d-flex mr-3">
+                                <div>
+                                    <img src="./img/profile/love-reaction.svg" width="25" />
+                                </div>
+                                <div className="ml-1">
+                                <p className="font-weight-bold text-primary mb-0">{loveReactions}</p>
+                                </div>
                             </div>
-                            <div className="ml-1">
-                            <p className="font-weight-bold text-primary mb-0">{likeReactions}</p>
-                            </div>
-                        </div>    
-                    </div>     
-               </div> 
-            </div>
-            <div>
-                <h5 className="font-weight-bold mb-4">Followers</h5>
-            </div>
-            <div className="d-flex">
-                <div>
-                    <img src="./img/profile/followers-followings.svg" alt="..." className="img-fluid mr-5" />
+                            <div className="d-flex">
+                                <div>
+                                    <img src="./img/profile/like-reaction.svg" width="25" />
+                                </div>
+                                <div className="ml-1">
+                                <p className="font-weight-bold text-primary mb-0">{likeReactions}</p>
+                                </div>
+                            </div>    
+                        </div>     
+                </div> 
                 </div>
                 <div>
-                    <p><span className="font-weight-bold">Tom White, Siya Morris, Saira Shea</span> and 117 friends follows Emma Fischer.</p>
+                    <h5 className="font-weight-bold mb-4">Followers</h5>
                 </div>
-            </div>
-            <div>
-                <h5 className="font-weight-bold mb-4">Followings</h5>
-            </div>
-            <div className="d-flex">
-                <div>
-                    <img src="./img/profile/followers-followings.svg" alt="..." className="img-fluid mr-5" />
+                <div className="d-flex">
+                    <div>
+                        <img src="./img/profile/followers-followings.svg" alt="..." className="img-fluid mr-5" />
+                    </div>
+                    <div>
+                        <p><span className="font-weight-bold">Tom White, Siya Morris, Saira Shea</span> and 117 friends follows Emma Fischer.</p>
+                    </div>
                 </div>
                 <div>
-                    <p><span className="font-weight-bold">Tom White, Siya Morris, Saira Shea</span> and 117 friends follows Emma Fischer.</p>
+                    <h5 className="font-weight-bold mb-4">Followings</h5>
+                </div>
+                <div className="d-flex">
+                    <div>
+                        <img src="./img/profile/followers-followings.svg" alt="..." className="img-fluid mr-5" />
+                    </div>
+                    <div>
+                        <p><span className="font-weight-bold">Tom White, Siya Morris, Saira Shea</span> and 117 friends follows Emma Fischer.</p>
+                    </div>
                 </div>
             </div>
         </div>

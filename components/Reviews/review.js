@@ -9,7 +9,7 @@ export default function Review({
     reviewerComments,
 }) {
     return (
-        <div className={`${styles.card_profile} card px-3 py-3 my-3`}>
+        <div style={{width: "30vh;"}} className={`${styles.card_profile} card px-3 py-3 my-3 width-30vh-mobile`}>
             <Row className="no-gutters">
                 <Col sm="3">
                     <img src={reviewerImg} alt="..." className="d-block m-auto" />

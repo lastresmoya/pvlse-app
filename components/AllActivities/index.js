@@ -11,7 +11,7 @@ export default function AllActivites() {
                 <div>
                 </div>
             </div>
-            <div className="d-flex my-4">
+            <div className="d-flex my-4 overflow-y-mobile">
                 <div className="mr-2">
                   <CardPvlse
                     img="./img/profile/yoga-activity.png"
@@ -41,7 +41,7 @@ export default function AllActivites() {
                   />
                 </div>
             </div>
-            <div className="d-flex my-4">
+            <div className="d-flex my-4 overflow-y-mobile">
                 <div className="mr-2">
                   <CardPvlse
                     img="./img/profile/yoga-activity.png"
