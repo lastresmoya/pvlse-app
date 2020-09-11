@@ -9,7 +9,7 @@ export default function MainCardProfile() {
           <Row>
             <Col md="3">
               <ProfileImg />
-              <div className="d-flex justify-content-center mt-5">
+              <div className="d-flex justify-content-center my-4">
                 <div className="mx-2">
                 <Button color="link" className={`${styles.button_icon}`}><img src="./img/profile/mail-icon.svg"/></Button>
                 </div>
@@ -19,7 +19,7 @@ export default function MainCardProfile() {
               </div>
             </Col>
             <Col md="5">
-            <div className="d-flex flex-wrap h-100">
+            <div className="d-flex flex-wrap h-100 justify-content-center justify-content-md-start">
               <div>
                 <h3 className="font-weight-bold">Emma Fischer
                     <Badge className="ml-3 px-3" pill size="md" color="primary">
@@ -34,7 +34,7 @@ export default function MainCardProfile() {
               <div>
                 <p className="font-weight-bold"><span className="text-primary">62</span> Activities - <span className="text-primary">120</span> Followers - <span className="text-primary">52</span> Followings</p>
               </div>
-              <div>
+              <div className="text-sm-center">
                 <Badge className="mr-4 px-3 py-2" pill color="light">Vegetarian</Badge>
                 <Badge className="mr-4 px-3 py-2" pill color="light">Nature</Badge>
                 <Badge className="mr-4 px-3 py-2" pill color="light">Animals</Badge>
@@ -50,7 +50,7 @@ export default function MainCardProfile() {
                 </div>
               </div>
             </Col>
-            <Col md="4">
+            <Col md="4" className="d-none d-md-block">
               <CardNextActivity
                 modality="Online"
                 activity="Yoga for beginners"

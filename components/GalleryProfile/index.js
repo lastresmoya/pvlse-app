@@ -8,7 +8,7 @@ export default function GalleryProfile() {
                 <h3 className="font-weight-bold">Gallery</h3>
               </div>
             </div>
-            <div className="d-flex my-4">
+            <div className="d-flex my-4 flex-nowrap flex-md-wrap overflow-y-mobile">
               <div className="mx-2">
                   <GalleryImage
                   galleryImg="./img/profile/gallery-img.png"
@@ -24,9 +24,7 @@ export default function GalleryProfile() {
                     galleryImg="./img/profile/gallery-img2.png"
                   />
                 </div>
-            </div>
-            <div className="d-flex my-4">
-              <div className="mx-2">
+                <div className="mx-2">
                   <GalleryImage
                   galleryImg="./img/profile/gallery-img3.png"
                   />

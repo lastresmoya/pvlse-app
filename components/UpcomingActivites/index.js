@@ -8,7 +8,7 @@ export default function UpcomingActivites() {
                 <h3 className="font-weight-bold"><span className="text-primary">Upcoming</span> Activities</h3>
               </div>
             </div>
-            <div className="d-flex my-4">
+            <div className="d-flex my-4 overflow-y-mobile">
               <div className="mr-2">
                   <CardPvlse
                     img="./img/profile/yoga-activity.png"

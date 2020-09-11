@@ -34,5 +34,6 @@ $input-box-shadow: none;
 $input-focus-box-shadow: none;
 $input-group-addon-bg: transparent;
 
+@import './mobile.module.scss';
 @import './forms.module.scss';
 @import '../scss/bootstrap.scss';

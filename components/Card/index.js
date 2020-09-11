@@ -25,7 +25,7 @@ export default function CardPvlse({
 }) {
   return (
     <div>
-      <Card className="rounded-sm">
+      <Card className="rounded-sm width-30vh-mobile">
         <div className="position-relative">
           <CardImg top width="100%" src={img} className="rounded-top" alt={'Pvlse about ' + category} />
           <div style={{background: `${categoryColor}`}} className={`${styles.category_tag_card} text-white position-absolute fixed-bottom `}>
