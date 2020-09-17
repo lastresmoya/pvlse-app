@@ -35,6 +35,9 @@ export default function components() {
                 price="25"
                 hostPic="https://via.placeholder.com/150"
                 hostName="Emma Fischer"
+                modality="Online"
+                date="22 July, 2020"
+                hour="15:00 hr"
               />
             </Col>
             <Col>
@@ -46,6 +49,9 @@ export default function components() {
                 price="25"
                 hostPic="https://via.placeholder.com/150"
                 hostName="Emma Fischer"
+                modality="Online"
+                date="22 July, 2020"
+                hour="15:00 hr"
               />
             </Col>
             <Col>
@@ -57,6 +63,9 @@ export default function components() {
                 price="25"
                 hostPic="https://via.placeholder.com/150"
                 hostName="Emma Fischer"
+                modality="Online"
+                date="22 July, 2020"
+                hour="15:00 hr"
               />
             </Col>
           </Row>
