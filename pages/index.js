@@ -17,7 +17,6 @@ export async function getStaticProps() {
       level: true,
       userJoin: true,
       languages: true,
-      // startDate: true,
       user: {
         select:{
           id: true,
