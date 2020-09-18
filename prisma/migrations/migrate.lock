@@ -1,0 +1,5 @@
+# Prisma Migrate lockfile v1
+
+20200918005524-add-new-schema
+20200918013935-modify-shema
+20200918032639-add-categories-to-pvlse-table
