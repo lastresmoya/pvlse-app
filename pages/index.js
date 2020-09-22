@@ -1,25 +1,53 @@
-import Link from 'next/link';
-import Layout from '../components/Layout';
-import styles from '../styles/Home.module.scss';
-import { Button, Row, Col } from 'reactstrap';
-import CardPvlse from '../components/Card';
-import middleware from '../middleware/middleware';
-import getPopular from '../lib/db';
+import Link from 'next/link'
+import Layout from '../components/Layout'
+import styles from '../styles/Home.module.scss'
+import NavBar from '../components/NavBar'
+import { Button, Row, Col, Jumbotron } from 'reactstrap';
+import CardPvlse from '../components/Card'
+import { PrismaClient } from '@prisma/client';
+import SearchNavBar from '../components/SearchNavBar'
+import Footer from '../components/Footer'
+import { urlObjectKeys } from 'next/dist/next-server/lib/utils';
+import categories from '../components/CategoriesCard/data'
+import CategoriesCard from '../components/CategoriesCard/index'
 
-export async function getServerSideProps(context) {
-	await middleware.apply(context.req, context.res);
-	const cursor = await getPopular(context.req);
-	const pvlses = await cursor.toArray();
+export async function getStaticProps() {
+  const prisma = new PrismaClient();
+  const pvlses = await prisma.activities.findMany({
+    select: {
+      id: true,
+      name: true,
+      price: true,
+      description: true,
+      place: true,
+      level: true,
+      userJoin: true,
+      languages: true,
+      user: {
+        select:{
+          id: true,
+          name: true
+        }
+      },
+      categories: {
+        select: {
+          name: true,
+          color: true
+        }
+      }
+    }
+  });
   return {
     props: {
-       pvlses
+      pvlses
     }
   };
 }
 
-export default function Home(props) {
-  const pvlses = props.pvlses;
-
+export default function Home(pvlses) {
+const data = pvlses.pvlses;
+const categoriesData = categories
+console.log(data, categories)
   return (
     <div>
       <NavBar />
@@ -44,29 +72,67 @@ export default function Home(props) {
           </div>
         </Jumbotron>
       </div>
-      <section className="pb-5">
-          <h3 className="text-primary">Cards with data from db</h3>
-          <Row>
-            {pvlses.map( p => (
-              <Col key= {p._id}>
-                <CardPvlse
-                  img="http://via.placeholder.com/640x360"
-                  title= {p.name}
-                  category={p.interest}
-                  categoryColor="#fffff"
-                  price={p.price}
-                  hostPic={p.hostProfilePicture}
-                  hostName={p.hostName}
-                  modality={p.location.fullAddress}
-		    // TODO: Format dates (pvlse.dates)
-                  date="22 July, 2020"
-                  hour="15:00 hr"
-                />
-              </Col>
-            ))}
-          </Row>
-        </section>
-    </Layout>
-
+      <Layout pageTitle="Home">
+        <section className="pb-5">
+            <h3 className="text-black font-weight-bold">Top Rated</h3>
+            <Row>
+              {data.map((item) => (
+                <Col key= {item.id}>
+                  <CardPvlse
+                    img="http://via.placeholder.com/640x360"
+                    title= {item.name}
+                    category={item.categories.name}
+                    categoryColor={item.categories.color}
+                    price={item.price}
+                    hostPic="https://via.placeholder.com/150"
+                    hostName={item.user.name}
+                    modality={item.place}
+                    date="22 July, 2020"
+                    hour="15:00 hr"
+                  />
+                </Col>
+              ))}
+            </Row>
+          </section>
+          <section className="pb-5">
+            <h3 className="text-black font-weight-bold">Popular</h3>
+            <Row>
+              {data.map((item) => (
+                <Col key= {item.id}>
+                  <CardPvlse
+                    img="http://via.placeholder.com/640x360"
+                    title= {item.name}
+                    category={item.categories.name}
+                    categoryColor={item.categories.color}
+                    price={item.price}
+                    hostPic="https://via.placeholder.com/150"
+                    hostName={item.user.name}
+                    modality={item.place}
+                    date="22 July, 2020"
+                    hour="15:00 hr"
+                  />
+                </Col>
+              ))}
+            </Row>
+          </section>
+          <section className="pb-5">
+            <h3 className="text-black font-weight-bold">Categories</h3>
+            <Row>
+              {categoriesData.map((category) => (
+                <Col key= {category.id}>
+                  <CategoriesCard
+                    img={category.img}
+                    category= {category.name}
+                    categoryColor={category.color}
+                  />
+                </Col>
+              ))}
+            </Row>
+          </section>
+      </Layout>
+      <section>
+        <Footer />
+      </section>
+    </div>
   )
 }
