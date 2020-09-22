@@ -19,14 +19,30 @@ export async function getServerSideProps(context) {
 
 export default function Home(props) {
   const pvlses = props.pvlses;
+
   return (
-    <Layout pageTitle="Home">
-      <div className={`${styles.container} 'text-aling-center'`}>
-        <p>
-          PVLSE Home page
-        </p>
-        <Link href="/components">Go to StyleGuide</Link>
-        <Link href="/profile">Go to Profile</Link>
+    <div>
+      <NavBar />
+      <div>
+        <Jumbotron
+          className="text-center text-white pt-5 d-flex align-items-center flex-wrap justify-content-center"
+          style={{
+            background: `url('./img/home/bg-home.png') no-repeat`,
+            backgroundSize: "cover",
+            height: '100vh'
+            }}>
+          <div>
+            <h1 className="display-3 pb-4 font-weight-bold">Discover your next activity</h1>
+            <h2 className="pb-4">A world of extraordinary activities are waiting for you</h2>
+            <div className="d-flex justify-content-center">
+              <SearchNavBar
+                firstPlaceholder="Activity"
+                secondPlaceholder="Date"
+                thirdPlaceholder="Location"
+              />
+            </div>
+          </div>
+        </Jumbotron>
       </div>
       <section className="pb-5">
           <h3 className="text-primary">Cards with data from db</h3>
@@ -51,5 +67,6 @@ export default function Home(props) {
           </Row>
         </section>
     </Layout>
+
   )
 }
