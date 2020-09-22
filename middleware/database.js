@@ -9,7 +9,7 @@ const dbName = "PvlseDev";
 const client = new MongoClient('mongodb://'+dbHostName+'/'+dbName, {
   auth: {
      user:"rob",
-     password: "pvlse_db_password_is_secure_because_its_ultra_long"
+     password: "pvlse_db_password_is_mega_long"
   },
   authMechanism: "SCRAM-SHA-256",
   useNewUrlParser: true,
