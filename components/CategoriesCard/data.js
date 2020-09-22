@@ -1,0 +1,3 @@
+const categories = [{id: 1, name: "Sports and Fitness", color: "#63C378", img: "./img/home/sports-fitness.png"}, {id: 2, name: "Games", color: "#794DDA", img: "./img/home/games.png"}, {id: 3, name: "Beauty & Fashion", color: "#E95B4C", img: "./img/home/beauty-fashion.png"}, {id: 4, name: "Music & Shows", color: "#D0B852", img: "./img/home/music-shows.png"}, {id: 5, name: "Arts & Culture", color: "#FA8578", img: "./img/home/arts-culture.png"}, {id: 6, name: "Food & Drinks", color: "#EE75CC", img: "./img/home/food-drinks.png"} ]
+
+export default categories;
