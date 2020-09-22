@@ -47,12 +47,12 @@ export default function components() {
             </Col>
           </Row>
           <Row>
-            <Col lg="10"> 
+            <Col lg="10">
               <Reviews />
             </Col>
           </Row>
           <Row>
-            <Col lg="11"> 
+            <Col lg="11">
               <GalleryProfile />
             </Col>
           </Row>
