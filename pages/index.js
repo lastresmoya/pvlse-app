@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Layout from '../components/Layout'
 import styles from '../styles/Home.module.scss'
-import { Row, Col, Jumbotron } from 'reactstrap';
+import { Row, Col, Jumbotron, Button } from 'reactstrap';
 import CardPvlse from '../components/Card'
 import { PrismaClient } from '@prisma/client';
 import SearchNavBar from '../components/SearchNavBar'
@@ -49,7 +49,6 @@ export async function getStaticProps() {
 export default function Home(pvlses) {
 const data = pvlses.pvlses;
 const categoriesData = categories
-console.log(data, categories)
   return (
     <div>
       <NavBar />
@@ -158,7 +157,7 @@ console.log(data, categories)
       <Layout>
         <section>
           <div className="mb-5">
-            <h3 className="text-center mb-5 font-weight-bold">PVLSE for <span className="text-primary">everyone</span></h3>
+            <h3 className="text-center mt-4 mb-5 font-weight-bold">PVLSE for <span className="text-primary">everyone</span></h3>
             <Row>
               <Col>
                 <PvlseForEveryoneCard
