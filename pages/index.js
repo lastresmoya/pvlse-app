@@ -1,11 +1,11 @@
 import Link from 'next/link'
 import Layout from '../components/Layout'
 import styles from '../styles/Home.module.scss'
-import NavBar from '../components/NavBar'
-import { Button, Row, Col, Jumbotron } from 'reactstrap';
+import { Row, Col, Jumbotron } from 'reactstrap';
 import CardPvlse from '../components/Card'
 import { PrismaClient } from '@prisma/client';
 import SearchNavBar from '../components/SearchNavBar'
+import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
 import { urlObjectKeys } from 'next/dist/next-server/lib/utils';
 import categories from '../components/Card/data'
