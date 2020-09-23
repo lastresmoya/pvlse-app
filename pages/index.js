@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import Layout from '../components/Layout'
-import styles from '../styles/Home.module.scss'
 import { Row, Col, Jumbotron, Button } from 'reactstrap';
 import CardPvlse from '../components/Card'
 import { PrismaClient } from '@prisma/client';
@@ -147,7 +146,7 @@ const categoriesData = categories
                 </div>
             </Col>
             <Col md="7">
-                <div className="position-absolute" style={{marginLeft: '10%'}}> 
+                <div className="position-absolute" style={{marginLeft: '10%'}}>
                   <img className="rounded mx-auto d-block" src="./img/home/girl-with-chile.png" />
                 </div>
             </Col>
