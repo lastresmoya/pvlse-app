@@ -15,7 +15,7 @@ export default function components() {
   const router = useRouter()
   return (
     <div>
-      <NavBar />
+      <NavBar navBarClasses="bg-secondary py-3" />
       <Layout pageTitle="Profile" backgroundColor="#4756EF;">
           <Row style={{marginBottom: "20%;"}}>
             <Col style={{marginBottom: "-25%;"}}>
