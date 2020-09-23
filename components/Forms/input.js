@@ -4,13 +4,12 @@ import { FormGroup, Label, Input } from 'reactstrap';
 export default function InputPvlse({
     label,
     placeholder,
-    bgColor,
-    textColor
+    inputClasses,
 }) {
     return (
         <div>
-           <FormGroup>
-                <Input className={bgColor} placeholder={placeholder} />
+           <FormGroup className="mb-2">
+                <Input className={`${inputClasses}`} placeholder={placeholder} />
                 <Label for="exampleEmail">{label}</Label>
             </FormGroup>
         </div>

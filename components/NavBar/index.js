@@ -23,30 +23,31 @@ const NavBar = (props) => {
 
   return (
     <div>
-      <Navbar color="secondary py-3" dark expand="md">
+      <Navbar className={props.navBarClasses} expand="md">
         <NavbarBrand href="/"><img src="./img/general/logo-white.svg"/></NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto ml-auto" navbar>
+          {/* <Nav navbar className="d-flex justify-content-center w-100">
             <SearchNavBar
               firstPlaceholder="Activity"
               secondPlaceholder="Date"
               thirdPlaceholder="Location"
+              inputBgColor="bg-secondary"
             />
-          </Nav>
-          <Nav navbar className="align-items-center">
+          </Nav> */}
+          <Nav navbar className="align-items-center d-flex w-100 justify-content-end">
             <NavItem>
               <NavLink className={`${styles.button_border} px-3 text-white mx-3 font-weight-bold`}>Sign Up</NavLink>
             </NavItem>
             <NavItem>
               <NavLink className="text-white mx-3 font-weight-bold">Login</NavLink>
             </NavItem>
-            <NavItem>
+            {/* <NavItem>
                 <NavLink>
                     <ButtonToggle className="mx-1 font-weight-bold" color="primary">+ Create</ButtonToggle>{' '}
                 </NavLink>
-            </NavItem>
-            <NavItem>
+            </NavItem> */}
+            {/* <NavItem>
                 <NavLink>
                   <UncontrolledButtonDropdown>
                     <DropdownToggle caret className={`${styles.button_border} px-3 text-white mx-3 font-weight-bold`}>
@@ -61,7 +62,7 @@ const NavBar = (props) => {
                     </DropdownMenu>
                   </UncontrolledButtonDropdown>
                 </NavLink>
-            </NavItem>
+            </NavItem> */}
           </Nav>
         </Collapse>
       </Navbar>
