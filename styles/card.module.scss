@@ -14,3 +14,23 @@
   bottom: -10%;
   font-weight: 900 !important;
 }
+
+.ellipse {
+  background: rgba(38, 38, 38, 0.2);
+  top: 4%;
+  right: 4%;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  padding: 0.4rem;
+  cursor: pointer;
+}
+
+.for_everyone_card {
+  border-radius: 10px;
+  box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.1);
+}
+
+.categories_card {
+  filter: drop-shadow(0px 10px 20px rgba(233, 91, 76, 0.4));
+}

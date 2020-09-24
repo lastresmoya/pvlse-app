@@ -25,17 +25,20 @@ export default function CardPvlse({
 }) {
   return (
     <div>
-      <Card className="rounded-sm width-30vh-mobile">
+      <Card className="rounded-sm">
         <div className="position-relative">
           <CardImg top width="100%" src={img} className="rounded-top" alt={'Pvlse about ' + category} />
-          <div style={{background: `${categoryColor}`}} className={`${styles.category_tag_card} text-white position-absolute fixed-bottom `}>
+          <div className={`${styles.ellipse} position-absolute`}>
+            <img src="./img/home/ellipse.svg" />
+          </div>
+          <div style={{background: `${categoryColor}`}} className={`${styles.category_tag_card} font-weight-bold text-white position-absolute fixed-bottom `}>
             {category}
           </div>
         </div>
         <CardBody>
           <CardTitle className="h5 font-weight-bold d-flex">
             <p>{title}</p>
-            <p className="h4 ml-auto">${price}</p>
+            <p className="h4 ml-auto font-weight-bold">${price}</p>
           </CardTitle>
           <CardSubtitle className="d-flex">
             <img width="20" height="20" className="figure-img img-fluid rounded-circle" src={hostPic}/>

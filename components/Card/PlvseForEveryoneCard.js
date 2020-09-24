@@ -1,11 +1,12 @@
 import {
     Card, CardImg,
 } from 'reactstrap';
+import styles from'../../styles/card.module.scss'
 
 const PvlseForEveryoneCard = (props) => {
     return (
       <div>
-        <Card className="rounded width-30vh-mobile border-0 mb-4">
+        <Card className={`${styles.for_everyone_card} border-0 mb-4`}>
             <div className="position-relative" style={{height: '35vh'}}>
             <CardImg top width="100%" height="100%" src={props.img} className="rounded" />
             </div>
