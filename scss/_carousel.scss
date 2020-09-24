@@ -13,6 +13,8 @@
 
 .carousel {
   position: relative;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .carousel.pointer-event {
